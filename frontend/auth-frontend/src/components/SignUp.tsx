@@ -39,6 +39,7 @@ function SignUp() {
                 <TextField
                   fullWidth
                   label="Email"
+                  name='email'
                   type="email"
                   error={!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email) && formData.email !== ''}
                   helperText={!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email) && formData.email !== '' ? 'Please enter a valid email address' : ''}
