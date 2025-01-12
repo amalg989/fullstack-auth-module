@@ -5,9 +5,12 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://root:example@localhost:27017', {
-      authSource: 'admin',
-    }),
+    MongooseModule.forRoot(
+      'mongodb+srv://amalcg989:V19Xin5XgB8W5hTt@cluster0.ezvax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+      {
+        authSource: 'admin',
+      },
+    ),
     UsersModule,
     AuthModule,
   ],
